@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "ChronoType";
+  src: url("./fonts/ChronoType.ttf") format("ttf"),
+    url("fonts/ChronoType.woff2");
+}
+
 .forest {
   width: 345px;
   height: 300px;
@@ -6,4 +12,24 @@
   background-size: cover;
   image-rendering: pixelated;
   position: relative;
+}
+
+.button-wrapper button {
+  font-family: "ChronoType";
+  font-size: 1.5rem;
+  text-align: center;
+  background: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  border: black solid 1px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
 }

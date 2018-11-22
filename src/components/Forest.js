@@ -17,6 +17,8 @@ class Forest extends Component {
       birdHearts: [0, 0, 0],
       gameOver: false
     };
+
+    this.timeouts = [];
   }
 
   playerAttack = () => {
@@ -30,7 +32,8 @@ class Forest extends Component {
         birdStatus: "hit"
       });
 
-      setTimeout(this.hurtBird, 750);
+      const hurtBirdTimeout = setTimeout(this.hurtBird, 750);
+      this.timeouts.push(hurtBirdTimeout);
     }
   };
 
@@ -45,7 +48,8 @@ class Forest extends Component {
         playerStatus: "hit"
       });
 
-      setTimeout(this.hurtPlayer, 700);
+      const hurtPlayerTimeout = setTimeout(this.hurtPlayer, 700);
+      this.timeouts.push(hurtPlayerTimeout);
     }
   };
 
@@ -59,6 +63,9 @@ class Forest extends Component {
         birdStatus: "idle",
         birdHearts
       });
+      this.timeouts = this.timeouts.filter(timeout => {
+        return timeout !== "hurtBirdTimeout";
+      });
     } else {
       this.setState({
         playerStatus: "idle",
@@ -66,7 +73,11 @@ class Forest extends Component {
         birdHearts,
         gameOver: true
       });
-      setTimeout(this.victory, 3000);
+      this.timeouts = this.timeouts.filter(timeout => {
+        return timeout !== "hurtBirdTimeout";
+      });
+      const victoryTimeout = setTimeout(this.victory, 3000);
+      this.timeouts.push(victoryTimeout);
     }
   };
 
@@ -79,6 +90,9 @@ class Forest extends Component {
         playerStatus: "idle",
         birdStatus: "idle",
         playerHearts
+      });
+      this.timeouts = this.timeouts.filter(timeout => {
+        return timeout !== "hurtPlayerTimeout";
       });
     } else {
       this.setState({
@@ -94,9 +108,15 @@ class Forest extends Component {
     this.setState({
       playerStatus: "victory"
     });
+    this.timeouts = this.timeouts.filter(timeout => {
+      return timeout !== "victoryTimeout";
+    });
   };
 
   switchGender = () => {
+    if (this.state.gameOver) {
+      return;
+    }
     if (this.state.playerType === "player-one") {
       this.setState({
         playerType: "player-two"
@@ -108,10 +128,27 @@ class Forest extends Component {
     }
   };
 
+  resetGame = () => {
+    this.timeouts.forEach(timeout => {
+      clearTimeout(timeout);
+    });
+    this.setState({
+      playerStatus: "idle",
+      playerHearts: [0, 0, 0],
+      playerType: "player-one",
+      birdStatus: "idle",
+      birdHearts: [0, 0, 0],
+      gameOver: false
+    });
+  };
+
   render() {
     return (
       <main className="game-wrapper">
-        <button onClick={this.switchGender}>switch gender</button>
+        <div className="button-wrapper">
+          <button onClick={this.switchGender}>switch character</button>
+          <button onClick={this.resetGame}>reset</button>
+        </div>
         <section className="forest">
           <Hearts char="player-life" count={this.state.playerHearts} />
           <Player

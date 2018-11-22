@@ -1,4 +1,11 @@
+@font-face {
+  font-family: "ChronoType";
+  src: url("./fonts/ChronoType.ttf") format("ttf"),
+    url("fonts/ChronoType.woff2");
+}
+
 .App {
+  font-family: "ChronoType";
   display: grid;
   justify-content: center;
   align-items: center;
