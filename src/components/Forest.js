@@ -182,10 +182,9 @@ class Forest extends Component {
           <Hearts char="player-life" count={this.state.playerHearts} />
           <Player
             type={this.state.playerType}
-            attack={this.playerAttack}
             status={this.state.playerStatus}
           />
-          <Bird attack={this.birdAttack} status={this.state.birdStatus} />
+          <Bird status={this.state.birdStatus} />
           <Hearts char="bird-life" count={this.state.birdHearts} />
         </section>
         <Staff currentPitch={this.state.currentPitch} />

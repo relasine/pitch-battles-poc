@@ -10,10 +10,7 @@ class Player extends Component {
 
   render() {
     return (
-      <div
-        onClick={this.props.attack}
-        className={`player ${this.props.type} ${this.props.status}`}
-      >
+      <div className={`player ${this.props.type} ${this.props.status}`}>
         <div className={`player-hit ${this.props.status}`} />
       </div>
     );

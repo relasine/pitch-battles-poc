@@ -10,7 +10,7 @@ class Bird extends Component {
 
   render() {
     return (
-      <div onClick={this.props.attack} className={`bird ${this.props.status}`}>
+      <div className={`bird ${this.props.status}`}>
         <div className={`bird-hit ${this.props.status}`} />
       </div>
     );
