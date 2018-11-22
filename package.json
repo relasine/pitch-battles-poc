@@ -1,6 +1,6 @@
 {
   "name": "pitch-battle-poc",
-  "homepage": "https://relasine.github.io/pitchbattles-poc",
+  "homepage": "https://relasine.github.io/pitch-battles-poc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
