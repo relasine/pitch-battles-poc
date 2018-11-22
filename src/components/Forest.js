@@ -14,7 +14,7 @@ class Forest extends Component {
       playerHearts: [0, 0, 0],
       playerType: "player-one",
       birdStatus: "idle",
-      birdHearts: [0, 0, 0],
+      birdHearts: [0, 0, 0, 0, 0, 0, 0],
       gameOver: false
     };
 
@@ -137,7 +137,7 @@ class Forest extends Component {
       playerHearts: [0, 0, 0],
       playerType: "player-one",
       birdStatus: "idle",
-      birdHearts: [0, 0, 0],
+      birdHearts: [0, 0, 0, 0, 0, 0, 0],
       gameOver: false
     });
   };

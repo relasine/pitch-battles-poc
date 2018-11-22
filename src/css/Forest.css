@@ -19,17 +19,28 @@
   font-size: 1.5rem;
   text-align: center;
   background: none;
-  padding: 0.3rem 0.5rem;
+  padding: 0.4rem 0.5rem 0.2rem;
   border-radius: 10px;
   border: black solid 1px;
 }
 
 button:hover {
   cursor: pointer;
+  color: #fff;
+  background: #000;
+}
+
+button:active {
+  color: #000;
+  background: #fff;
 }
 
 .button-wrapper {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
+}
+
+button:focus {
+  outline: none;
 }
