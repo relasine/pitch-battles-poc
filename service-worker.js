@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pitch-battles-poc/precache-manifest.42d564fb747af4829195ff86eba68477.js"
+  "/pitch-battles-poc/precache-manifest.ab3d3b8ffc9a0134e93d48cdc3923182.js"
 );
 
 workbox.clientsClaim();
