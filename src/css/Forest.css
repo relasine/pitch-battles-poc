@@ -1,0 +1,9 @@
+.forest {
+  width: 345px;
+  height: 300px;
+  background: url(./images/backgrounds/forest-path.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+  position: relative;
+}

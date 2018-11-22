@@ -1,0 +1,219 @@
+.player {
+  height: 135px;
+  width: 135px;
+  position: absolute;
+  animation: player-idle linear 1s infinite;
+  top: 120px;
+  left: 30px;
+}
+
+.player:hover {
+  cursor: pointer;
+}
+
+.player.attack {
+  animation: player-attack linear 0.75s;
+}
+
+.player.hit {
+  animation: player-hit linear 0.75s;
+}
+
+.player-hit.hit {
+  top: -20px;
+  left: -20px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  animation: player-hit-effect 0.7s linear;
+}
+
+@keyframes player-idle {
+  0% {
+    background: url("./images/players/player1/idle/idle1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  33.33% {
+    background: url("./images/players/player1/idle/idle1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  33.34% {
+    background: url("./images/players/player1/idle/idle2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  66.66% {
+    background: url("./images/players/player1/idle/idle2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  66.67% {
+    background: url("./images/players/player1/idle/idle3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  99.99% {
+    background: url("./images/players/player1/idle/idle3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  100% {
+    background: url("./images/players/player1/idle/idle1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+}
+
+@keyframes player-attack {
+  0% {
+    background: url("./images/players/player1/attack/attack1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  33.33% {
+    background: url("./images/players/player1/attack/attack1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  33.34% {
+    left: 60px;
+    background: url("./images/players/player1/attack/attack2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  66.66% {
+    background: url("./images/players/player1/attack/attack2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+    left: 60px;
+  }
+  66.67% {
+    background: url("./images/players/player1/attack/attack3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  100% {
+    background: url("./images/players/player1/attack/attack3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+    left: 30px;
+  }
+}
+
+@keyframes player-hit {
+  0% {
+    background: url("./images/players/player1/idle/idle1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+    left: 30px;
+  }
+  33.33% {
+    background: url("./images/players/player1/idle/idle1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  33.34% {
+    background: url("./images/players/player1/idle/idle2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  50% {
+    background: url("./images/players/player1/idle/idle2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  50.01% {
+    background: url("./images/players/player1/hit/hit1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  66% {
+    background: url("./images/players/player1/hit/hit1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+    left: 30px;
+  }
+  66.01% {
+    background: url("./images/players/player1/hit/hit2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  82% {
+    background: url("./images/players/player1/hit/hit2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+    left: 10px;
+  }
+  82.01% {
+    background: url("./images/players/player1/hit/hit3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  100% {
+    background: url("./images/players/player1/hit/hit3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+    left: 30px;
+  }
+}
+
+@keyframes player-hit-effect {
+  0% {
+    background: none;
+  }
+  50% {
+    background: none;
+  }
+  50.01% {
+    background: url("./images/effects/claw/claw_1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  60% {
+    background: url("./images/effects/claw/claw_1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  60.01% {
+    background: url("./images/effects/claw/claw_2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  70% {
+    background: url("./images/effects/claw/claw_2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  70.01% {
+    background: url("./images/effects/claw/claw_3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  80% {
+    background: url("./images/effects/claw/claw_3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  80.01% {
+    background: url("./images/effects/claw/claw_4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  90% {
+    background: url("./images/effects/claw/claw_4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  90.01% {
+    background: url("./images/effects/claw/claw_5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+  100% {
+    background: url("./images/effects/claw/claw_5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+  }
+}

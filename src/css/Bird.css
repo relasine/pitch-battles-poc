@@ -1,0 +1,163 @@
+.bird {
+  width: 138px;
+  height: 144px;
+  animation: bird-idle 0.7s infinite;
+  position: absolute;
+  top: 100px;
+  left: 160px;
+}
+
+.bird:hover {
+  cursor: pointer;
+}
+
+.bird.attack {
+  animation: bird-idle 0.7s linear infinite, bird-attack 0.7s linear;
+}
+
+.bird.hit {
+  animation: bird-idle 0.7s linear infinite, bird-hit 0.7s linear;
+}
+
+.bird-hit.hit {
+  left: -60px;
+  top: -50px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  animation: bird-hit-effect 0.7s linear;
+}
+
+@keyframes bird-idle {
+  0% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  33.33% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  33.34% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  66.66% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  66.67% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  99.99% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  100% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+}
+
+@keyframes bird-attack {
+  0% {
+    left: 160px;
+  }
+  50% {
+    left: 110px;
+  }
+  100% {
+    left: 160px;
+  }
+}
+
+@keyframes bird-hit {
+  0% {
+    left: 160px;
+  }
+  60% {
+    left: 160px;
+  }
+  80% {
+    left: 180px;
+  }
+  100% {
+    left: 160px;
+  }
+}
+
+@keyframes bird-hit-effect {
+  0% {
+    background: none;
+  }
+  33.33% {
+    background: none;
+  }
+  33.34% {
+    background: url("./images/effects/slash/slash1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  46.01% {
+    background: url("./images/effects/slash/slash1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  46.02% {
+    background: url("./images/effects/slash/slash2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  58% {
+    background: url("./images/effects/slash/slash2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  58.01% {
+    background: url("./images/effects/slash/slash3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  70% {
+    background: url("./images/effects/slash/slash3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  70.01% {
+    background: url("./images/effects/slash/slash4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  82% {
+    background: url("./images/effects/slash/slash4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  82.01% {
+    background: url("./images/effects/slash/slash5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+  100% {
+    background: url("./images/effects/slash/slash5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+  }
+}
