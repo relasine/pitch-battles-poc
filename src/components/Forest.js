@@ -5,6 +5,7 @@ import Player from "./Player";
 import Bird from "./Bird";
 import Hearts from "./Hearts";
 import Staff from "./Staff";
+import Input from "./Input";
 
 class Forest extends Component {
   constructor() {
@@ -15,12 +16,33 @@ class Forest extends Component {
       playerHearts: [0, 0, 0],
       playerType: "player-one",
       birdStatus: "idle",
-      birdHearts: [0, 0, 0, 0, 0, 0, 0],
-      gameOver: false
+      birdHearts: ["a", "b", "c", "d", "e", "f", "g"],
+      gameOver: false,
+      currentPitch: undefined
     };
 
     this.timeouts = [];
   }
+
+  componentDidMount() {
+    this.setRandomPitch();
+  }
+
+  setRandomPitch() {
+    const index = Math.floor(Math.random() * this.state.birdHearts.length);
+    const currentPitch = this.state.birdHearts[index];
+    this.setState({
+      currentPitch
+    });
+  }
+
+  submitLetter = guess => {
+    if (guess === this.state.currentPitch) {
+      this.playerAttack();
+    } else {
+      this.birdAttack();
+    }
+  };
 
   playerAttack = () => {
     if (
@@ -55,8 +77,14 @@ class Forest extends Component {
   };
 
   hurtBird = () => {
+    const index = this.state.birdHearts.findIndex(
+      heart => heart === this.state.currentPitch
+    );
+
+    console.log(index);
+
     let birdHearts = this.state.birdHearts.map(heart => heart);
-    birdHearts.shift();
+    birdHearts.splice(index, 1);
 
     if (birdHearts.length > 0) {
       this.setState({
@@ -67,6 +95,7 @@ class Forest extends Component {
       this.timeouts = this.timeouts.filter(timeout => {
         return timeout !== "hurtBirdTimeout";
       });
+      this.setRandomPitch();
     } else {
       this.setState({
         playerStatus: "idle",
@@ -137,7 +166,7 @@ class Forest extends Component {
       playerStatus: "idle",
       playerHearts: [0, 0, 0],
       birdStatus: "idle",
-      birdHearts: [0, 0, 0, 0, 0, 0, 0],
+      birdHearts: ["a", "b", "c", "d", "e", "f", "g"],
       gameOver: false
     });
   };
@@ -159,7 +188,8 @@ class Forest extends Component {
           <Bird attack={this.birdAttack} status={this.state.birdStatus} />
           <Hearts char="bird-life" count={this.state.birdHearts} />
         </section>
-        <Staff />
+        <Staff currentPitch={this.state.currentPitch} />
+        <Input submitLetter={this.submitLetter} />
       </main>
     );
   }

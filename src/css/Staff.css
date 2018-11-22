@@ -37,38 +37,38 @@
   top: 115px;
 }
 
-.line-five {
+.note.f {
   top: 19px;
 }
 
-.line-four {
+.note.d {
   top: 46px;
 }
 
-.line-three {
+.note.b {
   top: 74px;
 }
 
-.line-two {
+.note.g {
   top: 101px;
 }
 
-.line-one {
+.note.e {
   top: 128px;
 }
 
-.space-four {
+.note.e {
   top: 32px;
 }
 
-.space-three {
+.note.c {
   top: 60px;
 }
 
-.space-two {
+.note.a {
   top: 87px;
 }
 
-.space-one {
+.note.f {
   top: 115px;
 }

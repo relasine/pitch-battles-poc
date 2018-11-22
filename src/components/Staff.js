@@ -10,7 +10,7 @@ class Staff extends Component {
     return (
       <div className="staff">
         <div className={`clef ${this.props.clef}`} />
-        <div className={`note ${this.props.note}`} />
+        <div className={`note ${this.props.currentPitch}`} />
       </div>
     );
   }
