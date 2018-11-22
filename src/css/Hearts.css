@@ -1,0 +1,19 @@
+.hearts {
+  margin: 1rem;
+}
+
+.heart-point {
+  background: url("./images/icons/heart.png");
+  background-size: cover;
+  height: 27px;
+  width: 27px;
+}
+
+.player-life {
+  position: absolute;
+}
+
+.bird-life {
+  position: absolute;
+  right: 0;
+}
