@@ -12,7 +12,7 @@ class Player extends Component {
     return (
       <div
         onClick={this.props.attack}
-        className={`player ${this.props.status}`}
+        className={`player ${this.props.type} ${this.props.status}`}
       >
         <div className={`player-hit ${this.props.status}`} />
       </div>
