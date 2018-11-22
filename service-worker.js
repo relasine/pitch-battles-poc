@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pitchbattles-poc/precache-manifest.195128773163688defde4fcd546311f1.js"
+  "/pitch-battles-poc/precache-manifest.42d564fb747af4829195ff86eba68477.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/pitchbattles-poc/index.html", {
+workbox.routing.registerNavigationRoute("/pitch-battles-poc/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
