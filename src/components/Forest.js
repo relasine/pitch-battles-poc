@@ -4,6 +4,7 @@ import "../css/Forest.css";
 import Player from "./Player";
 import Bird from "./Bird";
 import Hearts from "./Hearts";
+import Staff from "./Staff";
 
 class Forest extends Component {
   constructor() {
@@ -135,7 +136,6 @@ class Forest extends Component {
     this.setState({
       playerStatus: "idle",
       playerHearts: [0, 0, 0],
-      playerType: "player-one",
       birdStatus: "idle",
       birdHearts: [0, 0, 0, 0, 0, 0, 0],
       gameOver: false
@@ -159,6 +159,7 @@ class Forest extends Component {
           <Bird attack={this.birdAttack} status={this.state.birdStatus} />
           <Hearts char="bird-life" count={this.state.birdHearts} />
         </section>
+        <Staff />
       </main>
     );
   }

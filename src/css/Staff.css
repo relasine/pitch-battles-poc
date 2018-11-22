@@ -1,0 +1,74 @@
+.staff {
+  width: 345px;
+  height: 172px;
+  background: url("./images/staff/staff.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+  position: relative;
+}
+
+.clef {
+  height: 130px;
+  width: 52px;
+  background: url("./images/staff/treblecleff.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+  position: absolute;
+  top: 32px;
+  left: 35px;
+}
+
+.note {
+  width: 39px;
+  height: 21px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url("./images/staff/notehead3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+  top: 115px;
+}
+
+.line-five {
+  top: 19px;
+}
+
+.line-four {
+  top: 46px;
+}
+
+.line-three {
+  top: 74px;
+}
+
+.line-two {
+  top: 101px;
+}
+
+.line-one {
+  top: 128px;
+}
+
+.space-four {
+  top: 32px;
+}
+
+.space-three {
+  top: 60px;
+}
+
+.space-two {
+  top: 87px;
+}
+
+.space-one {
+  top: 115px;
+}
