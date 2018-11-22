@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/pitch-battles-poc/static/media/claw_1.ec0b360e.png"
   },
   {
-    "revision": "0bb4e271dff2b21c3139",
-    "url": "/pitch-battles-poc/static/css/main.20512b89.chunk.css"
+    "revision": "1d8e1b4d8d961d47510c",
+    "url": "/pitch-battles-poc/static/css/main.19600c7a.chunk.css"
   },
   {
     "revision": "0cd6058fc3c24877ba89",
@@ -24,20 +24,28 @@ self.__precacheManifest = [
     "url": "/pitch-battles-poc/static/media/claw_4.dabc6793.png"
   },
   {
-    "revision": "bb5985f442ce99e032d11307291fee8f",
-    "url": "/pitch-battles-poc/static/media/claw_3.bb5985f4.png"
-  },
-  {
     "revision": "fb286121f3d4acc4e04a6e8ea5692ddb",
     "url": "/pitch-battles-poc/static/media/claw_2.fb286121.png"
   },
   {
-    "revision": "0bb4e271dff2b21c3139",
-    "url": "/pitch-battles-poc/static/js/main.0bb4e271.chunk.js"
+    "revision": "bb5985f442ce99e032d11307291fee8f",
+    "url": "/pitch-battles-poc/static/media/claw_3.bb5985f4.png"
+  },
+  {
+    "revision": "1d8e1b4d8d961d47510c",
+    "url": "/pitch-battles-poc/static/js/main.1d8e1b4d.chunk.js"
   },
   {
     "revision": "323d9f8eb44e374693cd4685f9f72224",
     "url": "/pitch-battles-poc/static/media/claw_5.323d9f8e.png"
+  },
+  {
+    "revision": "6b74cfca9459a15c3850016ad7d4c46c",
+    "url": "/pitch-battles-poc/static/media/slash3.6b74cfca.png"
+  },
+  {
+    "revision": "6a6393053de6cb6c7ef471fc395e7dde",
+    "url": "/pitch-battles-poc/static/media/slash4.6a639305.png"
   },
   {
     "revision": "25910cfa07117eb96a356ebee041ba3b",
@@ -48,19 +56,11 @@ self.__precacheManifest = [
     "url": "/pitch-battles-poc/static/media/slash2.43791d0e.png"
   },
   {
-    "revision": "6a6393053de6cb6c7ef471fc395e7dde",
-    "url": "/pitch-battles-poc/static/media/slash4.6a639305.png"
-  },
-  {
     "revision": "f86e7aa251b740ade5574a9b4247ab23",
     "url": "/pitch-battles-poc/static/media/slash5.f86e7aa2.png"
   },
   {
-    "revision": "6b74cfca9459a15c3850016ad7d4c46c",
-    "url": "/pitch-battles-poc/static/media/slash3.6b74cfca.png"
-  },
-  {
-    "revision": "6335cf5401dbfb957e7eba55dc31f937",
+    "revision": "a5609e60c2c5eb7a0547089b50f95158",
     "url": "/pitch-battles-poc/index.html"
   }
 ];
