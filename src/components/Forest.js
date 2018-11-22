@@ -13,14 +13,16 @@ class Forest extends Component {
       playerStatus: "idle",
       playerHearts: [0, 0, 0],
       birdStatus: "idle",
-      birdHearts: [0, 0, 0]
+      birdHearts: [0, 0, 0],
+      gameOver: false
     };
   }
 
   playerAttack = () => {
     if (
       this.state.playerStatus !== "attack" &&
-      this.state.playerStatus !== "hit"
+      this.state.playerStatus !== "hit" &&
+      !this.state.gameOver
     ) {
       this.setState({
         playerStatus: "attack",
@@ -32,7 +34,11 @@ class Forest extends Component {
   };
 
   birdAttack = () => {
-    if (this.state.birdStatus !== "attack" && this.state.birdStatus !== "hit") {
+    if (
+      this.state.birdStatus !== "attack" &&
+      this.state.birdStatus !== "hit" &&
+      !this.state.gameOver
+    ) {
       this.setState({
         birdStatus: "attack",
         playerStatus: "hit"
@@ -46,21 +52,46 @@ class Forest extends Component {
     let birdHearts = this.state.birdHearts.map(heart => heart);
     birdHearts.shift();
 
-    this.setState({
-      playerStatus: "idle",
-      birdStatus: "idle",
-      birdHearts
-    });
+    if (birdHearts.length > 0) {
+      this.setState({
+        playerStatus: "idle",
+        birdStatus: "idle",
+        birdHearts
+      });
+    } else {
+      this.setState({
+        playerStatus: "idle",
+        birdStatus: "dead",
+        birdHearts,
+        gameOver: true
+      });
+      setTimeout(this.victory, 3000);
+    }
   };
 
   hurtPlayer = () => {
     let playerHearts = this.state.playerHearts.map(heart => heart);
     playerHearts.shift();
 
+    if (playerHearts.length > 0) {
+      this.setState({
+        playerStatus: "idle",
+        birdStatus: "idle",
+        playerHearts
+      });
+    } else {
+      this.setState({
+        playerStatus: "dead",
+        birdStatus: "idle",
+        playerHearts,
+        gameOver: true
+      });
+    }
+  };
+
+  victory = () => {
     this.setState({
-      playerStatus: "idle",
-      birdStatus: "idle",
-      playerHearts
+      playerStatus: "victory"
     });
   };
 

@@ -19,6 +19,11 @@
   animation: bird-idle 0.7s linear infinite, bird-hit 0.7s linear;
 }
 
+.bird.dead {
+  background: none;
+  animation: bird-dead linear 3s;
+}
+
 .bird-hit.hit {
   left: -60px;
   top: -50px;
@@ -90,6 +95,120 @@
   }
   100% {
     left: 160px;
+  }
+}
+
+@keyframes bird-dead {
+  0% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  8% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  8.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  16% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  16.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  24% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  24.01% {
+    background: none;
+  }
+  32% {
+    background: none;
+  }
+  32.01% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  40% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  40.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  48% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  48.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  56% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  56.01% {
+    background: none;
+  }
+  64% {
+    background: none;
+  }
+  64.01% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  72% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  72.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  80% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  80.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  88% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-resolution: pixelated;
+  }
+  88.01% {
+    background: none;
+  }
+  96% {
+    background: none;
+  }
+  100% {
+    background: none;
   }
 }
 
