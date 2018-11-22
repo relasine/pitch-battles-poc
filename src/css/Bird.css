@@ -31,47 +31,170 @@
   height: 250px;
   position: absolute;
   animation: bird-hit-effect 0.7s linear;
+  -moz-animation: bird-hit-effect 0.7s linear;
+  -webkit-animation: bird-hit-effect 0.7s linear;
 }
 
 @keyframes bird-idle {
   0% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   33.33% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   33.34% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   66.66% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   66.67% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   99.99% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   100% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+}
+
+@-moz-keyframes bird-idle {
+  0% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  33.33% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  33.34% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  66.66% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  66.67% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  99.99% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  100% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+}
+
+@-webkit-keyframes bird-idle {
+  0% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  33.33% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  33.34% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  66.66% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  66.67% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  99.99% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  100% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
 }
 
 @keyframes bird-attack {
+  0% {
+    left: 160px;
+  }
+  50% {
+    left: 110px;
+  }
+  100% {
+    left: 160px;
+  }
+}
+
+@-moz-keyframes bird-attack {
+  0% {
+    left: 160px;
+  }
+  50% {
+    left: 110px;
+  }
+  100% {
+    left: 160px;
+  }
+}
+
+@-webkit-keyframes bird-attack {
   0% {
     left: 160px;
   }
@@ -98,36 +221,72 @@
   }
 }
 
+@-moz-keyframes bird-hit {
+  0% {
+    left: 160px;
+  }
+  60% {
+    left: 160px;
+  }
+  80% {
+    left: 180px;
+  }
+  100% {
+    left: 160px;
+  }
+}
+
+@-webkit-keyframes bird-hit {
+  0% {
+    left: 160px;
+  }
+  60% {
+    left: 160px;
+  }
+  80% {
+    left: 180px;
+  }
+  100% {
+    left: 160px;
+  }
+}
+
 @keyframes bird-dead {
   0% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   8% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   8.01% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   16% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   16.01% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   24% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   24.01% {
     background: none;
@@ -138,32 +297,38 @@
   32.01% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   40% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   40.01% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   48% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   48.01% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   56% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   56.01% {
     background: none;
@@ -174,32 +339,302 @@
   64.01% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   72% {
     background: url("./images/mobs/bird/bird1.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   72.01% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   80% {
     background: url("./images/mobs/bird/bird2.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   80.01% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   88% {
     background: url("./images/mobs/bird/bird3.png");
     background-size: cover;
-    image-resolution: pixelated;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  88.01% {
+    background: none;
+  }
+  96% {
+    background: none;
+  }
+  100% {
+    background: none;
+  }
+}
+
+@-moz-keyframes bird-dead {
+  0% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  8% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  8.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  16% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  16.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  24% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  24.01% {
+    background: none;
+  }
+  32% {
+    background: none;
+  }
+  32.01% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  40% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  40.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  48% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  48.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  56% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  56.01% {
+    background: none;
+  }
+  64% {
+    background: none;
+  }
+  64.01% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  72% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  72.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  80% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  80.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  88% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  88.01% {
+    background: none;
+  }
+  96% {
+    background: none;
+  }
+  100% {
+    background: none;
+  }
+}
+
+@-webkit-keyframes bird-dead {
+  0% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  8% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  8.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  16% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  16.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  24% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  24.01% {
+    background: none;
+  }
+  32% {
+    background: none;
+  }
+  32.01% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  40% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  40.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  48% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  48.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  56% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  56.01% {
+    background: none;
+  }
+  64% {
+    background: none;
+  }
+  64.01% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  72% {
+    background: url("./images/mobs/bird/bird1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  72.01% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  80% {
+    background: url("./images/mobs/bird/bird2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  80.01% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+  88% {
+    background: url("./images/mobs/bird/bird3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
   }
   88.01% {
     background: none;
@@ -223,60 +658,228 @@
     background: url("./images/effects/slash/slash1.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.01% {
     background: url("./images/effects/slash/slash1.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.02% {
     background: url("./images/effects/slash/slash2.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58% {
     background: url("./images/effects/slash/slash2.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58.01% {
     background: url("./images/effects/slash/slash3.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70% {
     background: url("./images/effects/slash/slash3.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70.01% {
     background: url("./images/effects/slash/slash4.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82% {
     background: url("./images/effects/slash/slash4.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82.01% {
     background: url("./images/effects/slash/slash5.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   100% {
     background: url("./images/effects/slash/slash5.png");
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+}
+
+@-webkit-keyframes bird-hit-effect {
+  0% {
+    background: none;
+  }
+  33.33% {
+    background: none;
+  }
+  33.34% {
+    background: url("./images/effects/slash/slash1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  46.01% {
+    background: url("./images/effects/slash/slash1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  46.02% {
+    background: url("./images/effects/slash/slash2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  58% {
+    background: url("./images/effects/slash/slash2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  58.01% {
+    background: url("./images/effects/slash/slash3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  70% {
+    background: url("./images/effects/slash/slash3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  70.01% {
+    background: url("./images/effects/slash/slash4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  82% {
+    background: url("./images/effects/slash/slash4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  82.01% {
+    background: url("./images/effects/slash/slash5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  100% {
+    background: url("./images/effects/slash/slash5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+}
+
+@-moz-keyframes bird-hit-effect {
+  0% {
+    background: none;
+  }
+  33.33% {
+    background: none;
+  }
+  33.34% {
+    background: url("./images/effects/slash/slash1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  46.01% {
+    background: url("./images/effects/slash/slash1.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  46.02% {
+    background: url("./images/effects/slash/slash2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  58% {
+    background: url("./images/effects/slash/slash2.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  58.01% {
+    background: url("./images/effects/slash/slash3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  70% {
+    background: url("./images/effects/slash/slash3.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  70.01% {
+    background: url("./images/effects/slash/slash4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  82% {
+    background: url("./images/effects/slash/slash4.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  82.01% {
+    background: url("./images/effects/slash/slash5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    transform: scaleX(-1);
+  }
+  100% {
+    background: url("./images/effects/slash/slash5.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
 }
