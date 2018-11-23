@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/pitch-battles-poc/static/media/forest-path.472dbad8.png"
   },
   {
-    "revision": "be4dfac658668a3253f0b12f6e1fd065",
+    "revision": "54ef52a608df608457ddbd173a3fd9e7",
     "url": "/pitch-battles-poc/index.html"
   }
 ];
