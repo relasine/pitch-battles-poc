@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/pitch-battles-poc/static/media/claw_6.8b0786c5.png"
   },
   {
-    "revision": "ac4dfdeac34030186893",
-    "url": "/pitch-battles-poc/static/css/main.39b7c32d.chunk.css"
+    "revision": "fa66a93a6becea4be34a",
+    "url": "/pitch-battles-poc/static/css/main.f5b22b7f.chunk.css"
   },
   {
     "revision": "0536aa4ac5ab819bf7fb",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/pitch-battles-poc/static/media/claw_5.323d9f8e.png"
   },
   {
-    "revision": "ac4dfdeac34030186893",
-    "url": "/pitch-battles-poc/static/js/main.ac4dfdea.chunk.js"
+    "revision": "fa66a93a6becea4be34a",
+    "url": "/pitch-battles-poc/static/js/main.fa66a93a.chunk.js"
   },
   {
     "revision": "25910cfa07117eb96a356ebee041ba3b",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/pitch-battles-poc/static/media/forest-path.472dbad8.png"
   },
   {
-    "revision": "3a40add20959543ed8df600d7384982d",
+    "revision": "3e5076e65ee0b5dc3ea4a046c8967d24",
     "url": "/pitch-battles-poc/index.html"
   }
 ];
