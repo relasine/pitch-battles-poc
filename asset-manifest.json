@@ -1,17 +1,17 @@
 {
-  "main.css": "/pitch-battles-poc/static/css/main.9f255a21.chunk.css",
-  "main.js": "/pitch-battles-poc/static/js/main.c4e4d2e7.chunk.js",
-  "main.js.map": "/pitch-battles-poc/static/js/main.c4e4d2e7.chunk.js.map",
+  "main.css": "/pitch-battles-poc/static/css/main.e63b8b90.chunk.css",
+  "main.js": "/pitch-battles-poc/static/js/main.88ca9574.chunk.js",
+  "main.js.map": "/pitch-battles-poc/static/js/main.88ca9574.chunk.js.map",
   "static/js/1.0536aa4a.chunk.js": "/pitch-battles-poc/static/js/1.0536aa4a.chunk.js",
   "static/js/1.0536aa4a.chunk.js.map": "/pitch-battles-poc/static/js/1.0536aa4a.chunk.js.map",
   "runtime~main.js": "/pitch-battles-poc/static/js/runtime~main.955fa553.js",
   "runtime~main.js.map": "/pitch-battles-poc/static/js/runtime~main.955fa553.js.map",
-  "static/media/Forest.css": "/pitch-battles-poc/static/media/forest-path.472dbad8.png",
+  "static/media/Forest.css": "/pitch-battles-poc/static/media/Scriptorium.eb33d6fc.ttf",
   "static/media/Player.css": "/pitch-battles-poc/static/media/claw_2.fb286121.png",
   "static/media/claw_6.png": "/pitch-battles-poc/static/media/claw_6.8b0786c5.png",
   "static/media/Bird.css": "/pitch-battles-poc/static/media/slash5.f86e7aa2.png",
-  "static/css/main.9f255a21.chunk.css.map": "/pitch-battles-poc/static/css/main.9f255a21.chunk.css.map",
+  "static/css/main.e63b8b90.chunk.css.map": "/pitch-battles-poc/static/css/main.e63b8b90.chunk.css.map",
   "index.html": "/pitch-battles-poc/index.html",
-  "precache-manifest.eb3e68f72a6720f3b46a5ce5b04e58c2.js": "/pitch-battles-poc/precache-manifest.eb3e68f72a6720f3b46a5ce5b04e58c2.js",
+  "precache-manifest.3d1f50414bf1608126a079f3eb35f84e.js": "/pitch-battles-poc/precache-manifest.3d1f50414bf1608126a079f3eb35f84e.js",
   "service-worker.js": "/pitch-battles-poc/service-worker.js"
 }
