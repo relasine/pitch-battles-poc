@@ -12,6 +12,7 @@
   background-size: cover;
   image-rendering: pixelated;
   position: relative;
+  backface-visibility: hidden;
 }
 
 .button-wrapper button {

@@ -5,6 +5,7 @@
   position: absolute;
   top: 100px;
   left: 160px;
+  backface-visibility: hidden;
 }
 
 .bird:hover {
@@ -20,7 +21,7 @@
 }
 
 .bird.dead {
-  background: none;
+  background-image: none;
   animation: bird-dead linear 3s;
 }
 
@@ -37,43 +38,50 @@
 
 @keyframes bird-idle {
   0% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   33.33% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   33.34% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   66.66% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   66.67% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   99.99% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   100% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -82,43 +90,50 @@
 
 @-moz-keyframes bird-idle {
   0% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   33.33% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   33.34% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   66.66% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   66.67% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   99.99% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   100% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -127,43 +142,50 @@
 
 @-webkit-keyframes bird-idle {
   0% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   33.33% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   33.34% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   66.66% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   66.67% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   99.99% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   100% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -253,472 +275,536 @@
 
 @keyframes bird-dead {
   0% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   8% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   8.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   16% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   16.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   24% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   24.01% {
-    background: none;
+    background-image: none;
   }
   32% {
-    background: none;
+    background-image: none;
   }
   32.01% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   40% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   40.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   48% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   48.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   56% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   56.01% {
-    background: none;
+    background-image: none;
   }
   64% {
-    background: none;
+    background-image: none;
   }
   64.01% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   72% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   72.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   80% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   80.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   88% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   88.01% {
-    background: none;
+    background-image: none;
   }
   96% {
-    background: none;
+    background-image: none;
   }
   100% {
-    background: none;
+    background-image: none;
   }
 }
 
 @-moz-keyframes bird-dead {
   0% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   8% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   8.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   16% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   16.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   24% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   24.01% {
-    background: none;
+    background-image: none;
   }
   32% {
-    background: none;
+    background-image: none;
   }
   32.01% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   40% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   40.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   48% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   48.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   56% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   56.01% {
-    background: none;
+    background-image: none;
   }
   64% {
-    background: none;
+    background-image: none;
   }
   64.01% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   72% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   72.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   80% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   80.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   88% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   88.01% {
-    background: none;
+    background-image: none;
   }
   96% {
-    background: none;
+    background-image: none;
   }
   100% {
-    background: none;
+    background-image: none;
   }
 }
 
 @-webkit-keyframes bird-dead {
   0% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   8% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   8.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   16% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   16.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   24% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   24.01% {
-    background: none;
+    background-image: none;
   }
   32% {
-    background: none;
+    background-image: none;
   }
   32.01% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   40% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   40.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   48% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   48.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   56% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   56.01% {
-    background: none;
+    background-image: none;
   }
   64% {
-    background: none;
+    background-image: none;
   }
   64.01% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   72% {
-    background: url("./images/mobs/bird/bird1.png");
+    background-image: url("./images/mobs/bird/bird1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   72.01% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   80% {
-    background: url("./images/mobs/bird/bird2.png");
+    background-image: url("./images/mobs/bird/bird2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   80.01% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   88% {
-    background: url("./images/mobs/bird/bird3.png");
+    background-image: url("./images/mobs/bird/bird3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
   }
   88.01% {
-    background: none;
+    background-image: none;
   }
   96% {
-    background: none;
+    background-image: none;
   }
   100% {
-    background: none;
+    background-image: none;
   }
 }
 
 @keyframes bird-hit-effect {
   0% {
-    background: none;
+    background-image: none;
   }
   33.33% {
-    background: none;
+    background-image: none;
   }
   33.34% {
-    background: url("./images/effects/slash/slash1.png");
+    background-image: url("./images/effects/slash/slash1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.01% {
-    background: url("./images/effects/slash/slash1.png");
+    background-image: url("./images/effects/slash/slash1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.02% {
-    background: url("./images/effects/slash/slash2.png");
+    background-image: url("./images/effects/slash/slash2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58% {
-    background: url("./images/effects/slash/slash2.png");
+    background-image: url("./images/effects/slash/slash2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58.01% {
-    background: url("./images/effects/slash/slash3.png");
+    background-image: url("./images/effects/slash/slash3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70% {
-    background: url("./images/effects/slash/slash3.png");
+    background-image: url("./images/effects/slash/slash3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70.01% {
-    background: url("./images/effects/slash/slash4.png");
+    background-image: url("./images/effects/slash/slash4.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82% {
-    background: url("./images/effects/slash/slash4.png");
+    background-image: url("./images/effects/slash/slash4.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82.01% {
-    background: url("./images/effects/slash/slash5.png");
+    background-image: url("./images/effects/slash/slash5.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   100% {
-    background: url("./images/effects/slash/slash5.png");
+    background-image: url("./images/effects/slash/slash5.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -728,76 +814,86 @@
 
 @-webkit-keyframes bird-hit-effect {
   0% {
-    background: none;
+    background-image: none;
   }
   33.33% {
-    background: none;
+    background-image: none;
   }
   33.34% {
-    background: url("./images/effects/slash/slash1.png");
+    background-image: url("./images/effects/slash/slash1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.01% {
-    background: url("./images/effects/slash/slash1.png");
+    background-image: url("./images/effects/slash/slash1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.02% {
-    background: url("./images/effects/slash/slash2.png");
+    background-image: url("./images/effects/slash/slash2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58% {
-    background: url("./images/effects/slash/slash2.png");
+    background-image: url("./images/effects/slash/slash2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58.01% {
-    background: url("./images/effects/slash/slash3.png");
+    background-image: url("./images/effects/slash/slash3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70% {
-    background: url("./images/effects/slash/slash3.png");
+    background-image: url("./images/effects/slash/slash3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70.01% {
-    background: url("./images/effects/slash/slash4.png");
+    background-image: url("./images/effects/slash/slash4.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82% {
-    background: url("./images/effects/slash/slash4.png");
+    background-image: url("./images/effects/slash/slash4.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82.01% {
-    background: url("./images/effects/slash/slash5.png");
+    background-image: url("./images/effects/slash/slash5.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   100% {
-    background: url("./images/effects/slash/slash5.png");
+    background-image: url("./images/effects/slash/slash5.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -807,76 +903,86 @@
 
 @-moz-keyframes bird-hit-effect {
   0% {
-    background: none;
+    background-image: none;
   }
   33.33% {
-    background: none;
+    background-image: none;
   }
   33.34% {
-    background: url("./images/effects/slash/slash1.png");
+    background-image: url("./images/effects/slash/slash1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.01% {
-    background: url("./images/effects/slash/slash1.png");
+    background-image: url("./images/effects/slash/slash1.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   46.02% {
-    background: url("./images/effects/slash/slash2.png");
+    background-image: url("./images/effects/slash/slash2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58% {
-    background: url("./images/effects/slash/slash2.png");
+    background-image: url("./images/effects/slash/slash2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   58.01% {
-    background: url("./images/effects/slash/slash3.png");
+    background-image: url("./images/effects/slash/slash3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70% {
-    background: url("./images/effects/slash/slash3.png");
+    background-image: url("./images/effects/slash/slash3.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   70.01% {
-    background: url("./images/effects/slash/slash4.png");
+    background-image: url("./images/effects/slash/slash4.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82% {
-    background: url("./images/effects/slash/slash4.png");
+    background-image: url("./images/effects/slash/slash4.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   82.01% {
-    background: url("./images/effects/slash/slash5.png");
+    background-image: url("./images/effects/slash/slash5.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     transform: scaleX(-1);
   }
   100% {
-    background: url("./images/effects/slash/slash5.png");
+    background-image: url("./images/effects/slash/slash5.png");
+    background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
