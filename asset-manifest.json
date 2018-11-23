@@ -1,7 +1,7 @@
 {
-  "main.css": "/pitch-battles-poc/static/css/main.899c35c6.chunk.css",
-  "main.js": "/pitch-battles-poc/static/js/main.1d8e4887.chunk.js",
-  "main.js.map": "/pitch-battles-poc/static/js/main.1d8e4887.chunk.js.map",
+  "main.css": "/pitch-battles-poc/static/css/main.cf672131.chunk.css",
+  "main.js": "/pitch-battles-poc/static/js/main.810ece84.chunk.js",
+  "main.js.map": "/pitch-battles-poc/static/js/main.810ece84.chunk.js.map",
   "static/js/1.0536aa4a.chunk.js": "/pitch-battles-poc/static/js/1.0536aa4a.chunk.js",
   "static/js/1.0536aa4a.chunk.js.map": "/pitch-battles-poc/static/js/1.0536aa4a.chunk.js.map",
   "runtime~main.js": "/pitch-battles-poc/static/js/runtime~main.955fa553.js",
@@ -10,8 +10,8 @@
   "static/media/Player.css": "/pitch-battles-poc/static/media/claw_2.fb286121.png",
   "static/media/claw_6.png": "/pitch-battles-poc/static/media/claw_6.8b0786c5.png",
   "static/media/Bird.css": "/pitch-battles-poc/static/media/slash5.f86e7aa2.png",
-  "static/css/main.899c35c6.chunk.css.map": "/pitch-battles-poc/static/css/main.899c35c6.chunk.css.map",
+  "static/css/main.cf672131.chunk.css.map": "/pitch-battles-poc/static/css/main.cf672131.chunk.css.map",
   "index.html": "/pitch-battles-poc/index.html",
-  "precache-manifest.837e4fc568f229d1356c19a4c9a0f36e.js": "/pitch-battles-poc/precache-manifest.837e4fc568f229d1356c19a4c9a0f36e.js",
+  "precache-manifest.7245591b0d5345cd6b5b4e567b316338.js": "/pitch-battles-poc/precache-manifest.7245591b0d5345cd6b5b4e567b316338.js",
   "service-worker.js": "/pitch-battles-poc/service-worker.js"
 }
