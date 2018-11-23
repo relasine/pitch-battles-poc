@@ -1,7 +1,7 @@
 {
   "main.css": "/pitch-battles-poc/static/css/main.b30ea158.chunk.css",
-  "main.js": "/pitch-battles-poc/static/js/main.4f4cefa0.chunk.js",
-  "main.js.map": "/pitch-battles-poc/static/js/main.4f4cefa0.chunk.js.map",
+  "main.js": "/pitch-battles-poc/static/js/main.6ea36726.chunk.js",
+  "main.js.map": "/pitch-battles-poc/static/js/main.6ea36726.chunk.js.map",
   "static/js/1.0536aa4a.chunk.js": "/pitch-battles-poc/static/js/1.0536aa4a.chunk.js",
   "static/js/1.0536aa4a.chunk.js.map": "/pitch-battles-poc/static/js/1.0536aa4a.chunk.js.map",
   "runtime~main.js": "/pitch-battles-poc/static/js/runtime~main.955fa553.js",
@@ -12,6 +12,6 @@
   "static/media/Bird.css": "/pitch-battles-poc/static/media/slash5.f86e7aa2.png",
   "static/css/main.b30ea158.chunk.css.map": "/pitch-battles-poc/static/css/main.b30ea158.chunk.css.map",
   "index.html": "/pitch-battles-poc/index.html",
-  "precache-manifest.f67f43a66abd091b51c9962b043d01e7.js": "/pitch-battles-poc/precache-manifest.f67f43a66abd091b51c9962b043d01e7.js",
+  "precache-manifest.0e8585a5774011648d0f3043f503f095.js": "/pitch-battles-poc/precache-manifest.0e8585a5774011648d0f3043f503f095.js",
   "service-worker.js": "/pitch-battles-poc/service-worker.js"
 }
