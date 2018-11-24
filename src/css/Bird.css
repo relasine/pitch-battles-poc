@@ -6,6 +6,12 @@
   top: 100px;
   left: 160px;
   backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: optimizeSpeed;
 }
 
 .bird:hover {
@@ -22,7 +28,7 @@
 
 .bird.dead {
   background-image: none;
-  animation: bird-dead linear 3s;
+  animation: bird-dead linear 2s;
 }
 
 .bird-hit.hit {
@@ -34,6 +40,12 @@
   animation: bird-hit-effect 0.7s linear;
   -moz-animation: bird-hit-effect 0.7s linear;
   -webkit-animation: bird-hit-effect 0.7s linear;
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: optimizeSpeed;
 }
 
 @keyframes bird-idle {
@@ -43,6 +55,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   33.33% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -50,6 +64,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   33.34% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -57,6 +73,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   66.66% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -64,6 +82,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   66.67% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -71,6 +91,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   99.99% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -78,6 +100,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   100% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -85,6 +109,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
 }
 
@@ -95,6 +121,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   33.33% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -102,6 +130,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   33.34% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -109,6 +139,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   66.66% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -116,6 +148,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   66.67% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -123,6 +157,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   99.99% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -130,6 +166,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   100% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -137,6 +175,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
 }
 
@@ -147,6 +187,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   33.33% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -154,6 +196,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   33.34% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -161,6 +205,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   66.66% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -168,6 +214,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   66.67% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -175,6 +223,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   99.99% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -182,6 +232,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   100% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -189,6 +241,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
 }
 
@@ -280,6 +334,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   8% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -287,6 +343,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   8.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -294,6 +352,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   16% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -301,6 +361,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   16.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -308,6 +370,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   24% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -315,6 +379,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   24.01% {
     background-image: none;
@@ -328,6 +394,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   40% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -335,6 +403,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   40.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -342,6 +412,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   48% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -349,6 +421,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   48.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -356,6 +430,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   56% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -363,6 +439,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   56.01% {
     background-image: none;
@@ -376,6 +454,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   72% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -383,6 +463,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   72.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -390,6 +472,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   80% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -397,6 +481,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   80.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -404,6 +490,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   88% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -411,6 +499,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   88.01% {
     background-image: none;
@@ -430,6 +520,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   8% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -437,6 +529,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   8.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -444,6 +538,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   16% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -451,6 +547,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   16.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -458,6 +556,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   24% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -465,6 +565,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   24.01% {
     background-image: none;
@@ -478,6 +580,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   40% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -485,6 +589,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   40.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -492,6 +598,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   48% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -499,6 +607,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   48.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -506,6 +616,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   56% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -513,6 +625,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   56.01% {
     background-image: none;
@@ -526,6 +640,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   72% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -533,6 +649,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   72.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -540,6 +658,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   80% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -547,6 +667,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   80.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -554,6 +676,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   88% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -561,6 +685,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   88.01% {
     background-image: none;
@@ -580,6 +706,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   8% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -587,6 +715,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   8.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -594,6 +724,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   16% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -601,6 +733,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   16.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -608,6 +742,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   24% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -615,6 +751,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   24.01% {
     background-image: none;
@@ -628,6 +766,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   40% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -635,6 +775,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   40.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -642,6 +784,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   48% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -649,6 +793,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   48.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -656,6 +802,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   56% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -663,6 +811,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   56.01% {
     background-image: none;
@@ -676,6 +826,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   72% {
     background-image: url("./images/mobs/bird/bird1.png");
@@ -683,6 +835,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   72.01% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -690,6 +844,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   80% {
     background-image: url("./images/mobs/bird/bird2.png");
@@ -697,6 +853,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   80.01% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -704,6 +862,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   88% {
     background-image: url("./images/mobs/bird/bird3.png");
@@ -711,6 +871,8 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
   }
   88.01% {
     background-image: none;
@@ -736,6 +898,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   46.01% {
@@ -744,6 +909,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   46.02% {
@@ -752,6 +920,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   58% {
@@ -760,6 +931,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   58.01% {
@@ -768,6 +942,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   70% {
@@ -776,6 +953,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   70.01% {
@@ -784,6 +964,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   82% {
@@ -792,6 +975,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   82.01% {
@@ -800,6 +986,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   100% {
@@ -808,6 +997,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
 }
@@ -825,6 +1017,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   46.01% {
@@ -833,6 +1028,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   46.02% {
@@ -841,6 +1039,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   58% {
@@ -849,6 +1050,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   58.01% {
@@ -857,6 +1061,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   70% {
@@ -865,6 +1072,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   70.01% {
@@ -873,6 +1083,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   82% {
@@ -881,6 +1094,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   82.01% {
@@ -889,6 +1105,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   100% {
@@ -897,6 +1116,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
 }
@@ -914,6 +1136,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   46.01% {
@@ -922,6 +1147,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   46.02% {
@@ -930,6 +1158,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   58% {
@@ -938,6 +1169,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   58.01% {
@@ -946,6 +1180,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   70% {
@@ -954,6 +1191,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   70.01% {
@@ -962,6 +1202,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   82% {
@@ -970,6 +1213,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   82.01% {
@@ -978,6 +1224,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
   100% {
@@ -986,6 +1235,9 @@
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeSpeed;
+
     transform: scaleX(-1);
   }
 }

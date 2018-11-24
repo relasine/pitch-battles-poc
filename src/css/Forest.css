@@ -4,6 +4,12 @@
     url("fonts/ChronoType.woff2");
 }
 
+@font-face {
+  font-family: "Scriptorium";
+  src: url("./fonts/Scriptorium.ttf") format("ttf"),
+    url("fonts/Scriptorium.woff2");
+}
+
 .forest {
   width: 345px;
   height: 300px;
@@ -13,6 +19,18 @@
   image-rendering: pixelated;
   position: relative;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+  overflow: hidden;
+}
+
+.game-title {
+  font-family: "Scriptorium";
+
+  text-align: center;
+  font-size: 3rem;
+  margin: 0.5rem;
 }
 
 .button-wrapper button {
@@ -44,4 +62,68 @@ button:active {
 
 button:focus {
   outline: none;
+}
+
+.victory-text,
+.game-over-text {
+  font-family: "Scriptorium";
+  font-size: 3rem;
+  color: red;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  width: 200px;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: -200px;
+  transition: 0.2s;
+  z-index: 9;
+}
+
+.next-level-text {
+  color: red;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  position: absolute;
+  transition: 0.2s;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
+
+  z-index: 9;
+  top: 200px;
+  left: -900px;
+  right: 0;
+  font-size: 2rem;
+}
+
+.screen-filter {
+  height: 300px;
+  width: 345px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 345px;
+  transition: 0.2s;
+}
+
+.screen-filter.victory,
+.screen-filter.dead {
+  left: 0;
+}
+
+.next-level-text.victory {
+  left: 0;
+}
+
+.victory-text.victory {
+  left: 70px;
+}
+
+.game-over-text.dead {
+  left: 70px;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }

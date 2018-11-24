@@ -11,3 +11,11 @@
 .pitch:hover {
   cursor: pointer;
 }
+
+.pitch:focus {
+  outline: none;
+}
+
+.pitch:active {
+  transform: scale(1.1);
+}

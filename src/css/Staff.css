@@ -1,4 +1,5 @@
 .staff {
+  margin-top: 1.5rem;
   width: 345px;
   height: 172px;
   background: url("./images/staff/staff.png");
@@ -34,41 +35,66 @@
   background-size: cover;
   background-position: center;
   image-rendering: pixelated;
-  top: 115px;
+  top: 142px;
 }
 
-.note.f {
+.note.line-five {
   top: 19px;
 }
 
-.note.d {
+.note.line-four {
   top: 46px;
 }
 
-.note.b {
+.note.line-three {
   top: 74px;
 }
 
-.note.g {
+.note.line-two {
   top: 101px;
 }
 
-.note.e {
+.note.line-one {
   top: 128px;
 }
 
-.note.e {
+.note.space-four {
   top: 32px;
 }
 
-.note.c {
+.note.space-three {
   top: 60px;
 }
 
-.note.a {
+.note.space-two {
   top: 87px;
 }
 
-.note.f {
+.note.space-one {
   top: 115px;
+}
+
+.note.below-space-one {
+  top: 142px;
+}
+
+.note.above-space-one {
+  top: 6px;
+}
+
+.note.above-line-one {
+  background: url("./images/staff/notehead-one-ledger.png");
+  top: -5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 44px;
+}
+
+.note.above-space-two {
+  background: url("./images/staff/notehead-one-ledger-above.png");
+  height: 25px;
+  top: -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 44px;
 }

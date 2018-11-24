@@ -5,8 +5,8 @@
 .heart-point {
   background: url("./images/icons/heart.png");
   background-size: cover;
-  height: 27px;
-  width: 27px;
+  height: 21px;
+  width: 21px;
 }
 
 .player-life {

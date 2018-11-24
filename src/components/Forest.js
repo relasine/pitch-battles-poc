@@ -6,6 +6,7 @@ import Bird from "./Bird";
 import Hearts from "./Hearts";
 import Staff from "./Staff";
 import Input from "./Input";
+import collection from "../collections.js";
 
 class Forest extends Component {
   constructor() {
@@ -16,28 +17,67 @@ class Forest extends Component {
       playerHearts: [0, 0, 0],
       playerType: "player-one",
       birdStatus: "idle",
-      birdHearts: ["a", "b", "c", "d", "e", "f", "g"],
+      birdHearts: [],
       gameOver: false,
-      currentPitch: undefined
+      currentPitch: undefined,
+      level: 1,
+      instrument: undefined
     };
 
     this.timeouts = [];
   }
 
   componentDidMount() {
-    this.setRandomPitch();
+    this.setupGame(this.props.instrument);
+    window.addEventListener("keyup", this.submitLetter);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("keyup", this.submitLetter);
   }
 
-  setRandomPitch() {
+  setupGame = (instrument = "flute") => {
+    const birdHearts = collection[instrument].pitches.filter(pitch => {
+      return pitch.level <= this.state.level;
+    });
+    this.setState(
+      {
+        birdHearts,
+        instrument
+      },
+      this.setRandomPitch
+    );
+  };
+
+  setRandomPitch = () => {
     const index = Math.floor(Math.random() * this.state.birdHearts.length);
     const currentPitch = this.state.birdHearts[index];
+
     this.setState({
       currentPitch
     });
-  }
+  };
 
-  submitLetter = guess => {
-    if (guess === this.state.currentPitch) {
+  submitLetter = input => {
+    let guess;
+
+    if (
+      input.key &&
+      (input.key === "a" ||
+        input.key === "b" ||
+        input.key === "c" ||
+        input.key === "d" ||
+        input.key === "e" ||
+        input.key === "f" ||
+        input.key === "g")
+    ) {
+      guess = input.key;
+    } else if (input.key) {
+      return;
+    } else {
+      guess = input;
+    }
+
+    if (guess === this.state.currentPitch.pitch) {
       this.playerAttack();
     } else {
       this.birdAttack();
@@ -81,8 +121,6 @@ class Forest extends Component {
       heart => heart === this.state.currentPitch
     );
 
-    console.log(index);
-
     let birdHearts = this.state.birdHearts.map(heart => heart);
     birdHearts.splice(index, 1);
 
@@ -106,7 +144,7 @@ class Forest extends Component {
       this.timeouts = this.timeouts.filter(timeout => {
         return timeout !== "hurtBirdTimeout";
       });
-      const victoryTimeout = setTimeout(this.victory, 3000);
+      const victoryTimeout = setTimeout(this.victory, 2000);
       this.timeouts.push(victoryTimeout);
     }
   };
@@ -162,23 +200,57 @@ class Forest extends Component {
     this.timeouts.forEach(timeout => {
       clearTimeout(timeout);
     });
-    this.setState({
-      playerStatus: "idle",
-      playerHearts: [0, 0, 0],
-      birdStatus: "idle",
-      birdHearts: ["a", "b", "c", "d", "e", "f", "g"],
-      gameOver: false
-    });
+    this.setState(
+      {
+        playerStatus: "idle",
+        playerHearts: [0, 0, 0],
+        birdStatus: "idle",
+        gameOver: false,
+        level: 1
+      },
+      this.setupGame
+    );
+  };
+
+  nextLevel = () => {
+    if (this.state.playerStatus === "victory") {
+      this.setState(
+        {
+          level: this.state.level + 1,
+          playerStatus: "idle",
+          birdStatus: "idle",
+          gameOver: false
+        },
+        this.setupGame
+      );
+    }
   };
 
   render() {
     return (
-      <main className="game-wrapper">
+      <main
+        className="game-wrapper"
+        onKeyPress={event => {
+          this.submitLetter(event.char);
+        }}
+      >
+        <h1 className="game-title">PITCH BATTLES</h1>
+        <p className="description">Identify the pitch! Slay the beast!</p>
         <div className="button-wrapper">
           <button onClick={this.switchGender}>switch character</button>
           <button onClick={this.resetGame}>reset</button>
         </div>
-        <section className="forest">
+        <section className="forest" onClick={this.nextLevel}>
+          <div className={`screen-filter ${this.state.playerStatus} `} />
+          <h1 className={`victory-text ${this.state.playerStatus}`}>VICTORY</h1>
+          {this.state.level < 3 && (
+            <p className={`next-level-text ${this.state.playerStatus}`}>
+              click to start the next level...
+            </p>
+          )}
+          <h1 className={`game-over-text ${this.state.playerStatus}`}>
+            GAME OVER
+          </h1>
           <Hearts char="player-life" count={this.state.playerHearts} />
           <Player
             type={this.state.playerType}
@@ -187,7 +259,9 @@ class Forest extends Component {
           <Bird status={this.state.birdStatus} />
           <Hearts char="bird-life" count={this.state.birdHearts} />
         </section>
-        <Staff currentPitch={this.state.currentPitch} />
+        {this.state.currentPitch && (
+          <Staff currentPitch={this.state.currentPitch.position} />
+        )}
         <Input submitLetter={this.submitLetter} />
       </main>
     );
