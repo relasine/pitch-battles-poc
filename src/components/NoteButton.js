@@ -5,7 +5,7 @@ const NoteButton = props => {
     <div
       className={`${props.letter} pitch`}
       onClick={() => {
-        props.submitLetter(props.letter);
+        props.submitLetter(null, props.letter);
       }}
     >
       {props.letter}

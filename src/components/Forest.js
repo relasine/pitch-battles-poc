@@ -57,21 +57,21 @@ class Forest extends Component {
     });
   };
 
-  submitLetter = input => {
+  submitLetter = (event, input) => {
     let guess;
 
     if (
-      input.key &&
-      (input.key === "a" ||
-        input.key === "b" ||
-        input.key === "c" ||
-        input.key === "d" ||
-        input.key === "e" ||
-        input.key === "f" ||
-        input.key === "g")
+      event &&
+      (event.key === "a" ||
+        event.key === "b" ||
+        event.key === "c" ||
+        event.key === "d" ||
+        event.key === "e" ||
+        event.key === "f" ||
+        event.key === "g")
     ) {
-      guess = input.key;
-    } else if (input.key) {
+      guess = event.key;
+    } else if (event) {
       return;
     } else {
       guess = input;
@@ -213,7 +213,7 @@ class Forest extends Component {
   };
 
   nextLevel = () => {
-    if (this.state.playerStatus === "victory") {
+    if (this.state.playerStatus === "victory" && this.state.level < 4) {
       this.setState(
         {
           level: this.state.level + 1,
@@ -228,12 +228,7 @@ class Forest extends Component {
 
   render() {
     return (
-      <main
-        className="game-wrapper"
-        onKeyPress={event => {
-          this.submitLetter(event.char);
-        }}
-      >
+      <main className="game-wrapper">
         <h1 className="game-title">PITCH BATTLES</h1>
         <p className="description">Identify the pitch! Slay the beast!</p>
         <div className="button-wrapper">
@@ -243,7 +238,7 @@ class Forest extends Component {
         <section className="forest" onClick={this.nextLevel}>
           <div className={`screen-filter ${this.state.playerStatus} `} />
           <h1 className={`victory-text ${this.state.playerStatus}`}>VICTORY</h1>
-          {this.state.level < 3 && (
+          {this.state.level < 4 && (
             <p className={`next-level-text ${this.state.playerStatus}`}>
               click to start the next level...
             </p>
@@ -257,7 +252,9 @@ class Forest extends Component {
             status={this.state.playerStatus}
           />
           <Bird status={this.state.birdStatus} />
+
           <Hearts char="bird-life" count={this.state.birdHearts} />
+          <p className="current-level">Level {this.state.level}</p>
         </section>
         {this.state.currentPitch && (
           <Staff currentPitch={this.state.currentPitch.position} />

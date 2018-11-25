@@ -1,12 +1,15 @@
 .hearts {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
 }
 
 .heart-point {
   background: url("./images/icons/heart.png");
   background-size: cover;
-  height: 21px;
-  width: 21px;
+  height: 14px;
+  width: 14px;
+  padding: 2px;
 }
 
 .player-life {

@@ -4,6 +4,21 @@ const collection = {
     clef: "treble",
     pitches: [
       {
+        pitch: "e",
+        position: "line-one",
+        level: 4
+      },
+      {
+        pitch: "d",
+        position: "below-space-one",
+        level: 4
+      },
+      {
+        pitch: "c",
+        position: "below-line-one",
+        level: 4
+      },
+      {
         pitch: "f",
         position: "space-one",
         level: 3

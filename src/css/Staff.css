@@ -98,3 +98,11 @@
   background-size: cover;
   width: 44px;
 }
+
+.note.below-line-one {
+  background: url("./images/staff/notehead-one-ledger.png");
+  top: 155px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 44px;
+}
