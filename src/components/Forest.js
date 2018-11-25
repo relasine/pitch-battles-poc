@@ -267,6 +267,11 @@ class Forest extends Component {
               click to start the next level...
             </p>
           )}
+          {this.state.level === 4 && (
+            <p className={`final-level ${this.state.playerStatus}`}>
+              You have finished the final level!
+            </p>
+          )}
           <h1 className={`game-over-text ${this.state.playerStatus}`}>
             GAME OVER
           </h1>
