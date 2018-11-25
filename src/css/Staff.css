@@ -10,10 +10,23 @@
   position: relative;
 }
 
-.clef {
+.clef.treble {
   height: 130px;
   width: 52px;
-  background: url("./images/staff/treblecleff.png");
+  background: url("./images/staff/trebleclef.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+  position: absolute;
+  top: 32px;
+  left: 35px;
+}
+
+.clef.bass {
+  height: 82px;
+  width: 82px;
+  background: url("./images/staff/bassclef.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

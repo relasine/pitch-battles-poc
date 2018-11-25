@@ -21,28 +21,30 @@ class Forest extends Component {
       gameOver: false,
       currentPitch: undefined,
       level: 1,
-      instrument: undefined
+      clef: undefined
     };
 
     this.timeouts = [];
   }
 
   componentDidMount() {
-    this.setupGame(this.props.instrument);
+    this.setupGame(this.props.clef);
     window.addEventListener("keyup", this.submitLetter);
   }
   componentWillUnmount() {
     window.removeEventListener("keyup", this.submitLetter);
   }
 
-  setupGame = (instrument = "flute") => {
-    const birdHearts = collection[instrument].pitches.filter(pitch => {
-      return pitch.level <= this.state.level;
-    });
+  setupGame = () => {
+    const birdHearts = collection[this.state.clef || "treble"].pitches.filter(
+      pitch => {
+        return pitch.level <= this.state.level;
+      }
+    );
     this.setState(
       {
         birdHearts,
-        instrument
+        clef: this.state.clef || "treble"
       },
       this.setRandomPitch
     );
@@ -197,6 +199,28 @@ class Forest extends Component {
   };
 
   resetGame = () => {
+    if (
+      this.state.playerHearts.length === 3 &&
+      this.state.birdHearts.length === 5 &&
+      this.state.level === 1 &&
+      this.state.clef === "treble"
+    ) {
+      this.setState(
+        {
+          clef: "bass"
+        },
+        this.setupGame
+      );
+    } else if (
+      this.state.playerHearts.length === 3 &&
+      this.state.birdHearts.length === 5 &&
+      this.state.level === 1 &&
+      this.state.clef === "bass"
+    ) {
+      this.setState({
+        clef: "treble"
+      });
+    }
     this.timeouts.forEach(timeout => {
       clearTimeout(timeout);
     });
@@ -233,7 +257,7 @@ class Forest extends Component {
         <p className="description">Identify the pitch! Slay the beast!</p>
         <div className="button-wrapper">
           <button onClick={this.switchGender}>switch character</button>
-          <button onClick={this.resetGame}>reset</button>
+          <button onClick={this.resetGame}>reset/change clef</button>
         </div>
         <section className="forest" onClick={this.nextLevel}>
           <div className={`screen-filter ${this.state.playerStatus} `} />
@@ -257,7 +281,10 @@ class Forest extends Component {
           <p className="current-level">Level {this.state.level}</p>
         </section>
         {this.state.currentPitch && (
-          <Staff currentPitch={this.state.currentPitch.position} />
+          <Staff
+            clef={this.state.clef}
+            currentPitch={this.state.currentPitch.position}
+          />
         )}
         <Input submitLetter={this.submitLetter} />
       </main>
