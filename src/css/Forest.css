@@ -115,7 +115,7 @@ button:focus {
 .screen-filter {
   height: 300px;
   width: 345px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   left: 345px;
   transition: 0.2s;
